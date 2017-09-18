@@ -1,0 +1,12 @@
+<p-toolbar>
+    <div class="ui-toolbar-group-left">
+            <button pButton type="button" label="Resumo" icon="fa-plus"  [routerLink]="['./dashboard']"></button>
+            <button pButton type="button" label="Convidados" icon="fa-folder-open" [routerLink]="['./clientes']"></button>
+        
+        <button pButton type="button" label="Itens" icon="fa-folder-open" [routerLink]="['./produtos']"></button>
+        <button pButton type="button" label="Medidas" icon="fa-folder-open" [routerLink]="['./categorias']"></button>
+        <!-- <button pButton type="button" label="Pedidos" icon="fa-folder-open" [routerLink]="['./pedidos']"></button> -->
+        
+    </div>
+</p-toolbar>
+<router-outlet></router-outlet>

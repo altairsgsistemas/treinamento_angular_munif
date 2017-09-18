@@ -1,0 +1,16 @@
+<p-panel>
+    <p-header>
+        <div class="ui-helper-clearfix">
+            <span class="ui-panel-title">Itens</span>
+            <p-splitButton [style]="{'float':'right'}" label="Salvar" (onClick)="salvar()" [model]="items"></p-splitButton>
+        </div>
+    </p-header>
+    <h3>Nome</h3>
+    <input id="in1" type="text" size="30" pInputText [(ngModel)]="selecionado.nome">
+    <h3>Quantidade</h3>
+    <input id="in2" type="text" size="30" pInputText [(ngModel)]="selecionado.quantidade">
+    <h3>Medida</h3>
+    <p-autoComplete [(ngModel)]="selecionado.categoria" [suggestions]="categorias" (completeMethod)="filtrarCategorias($event)"
+        [size]="10" [minLength]="1" [dropdown]="true" (onDropdownClick)="atualizaCategorias($event)" field="nome">
+    </p-autoComplete>
+</p-panel>

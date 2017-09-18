@@ -1,0 +1,33 @@
+<p-accordion>
+    <!-- <p-accordionTab header="Categorias" [selected]="true">
+       <p-dataList [value]="listaCategoria" >
+          <ng-template let-categoria pTemplate="item">
+          {{categoria.nome}}
+          </ng-template>
+       </p-dataList>
+    </p-accordionTab> -->
+    <p-accordionTab header="Produtos" [selected]="true">
+       <p-dataList [value]="listaProduto" >
+          <ng-template let-produto pTemplate="item">
+          {{produto.nome}}
+          </ng-template>
+       </p-dataList>
+    </p-accordionTab>
+    <!-- <p-accordionTab header="Pedidos" [selected]="true">
+       <p-dataList [value]="listaPedido" >
+          <ng-template let-pedido pTemplate="item">
+          {{pedido.cliente}}
+          </ng-template>
+       </p-dataList>
+    </p-accordionTab> -->
+    <p-accordionTab header="Convidados" [selected]="true">
+            <p-dataList [value]="listaCliente" >
+               <ng-template let-cliente pTemplate="item">
+               {{cliente.nome}}
+               </ng-template>
+            </p-dataList>
+         </p-accordionTab>
+
+
+
+</p-accordion>
