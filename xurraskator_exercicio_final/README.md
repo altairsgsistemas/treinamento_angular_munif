@@ -1,6 +1,8 @@
-# Pedidos
+# XURRASKATOR
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.6.
+Monte seu xurrasco!
+Chame seus amigos!
+
 
 ## Development server
 
