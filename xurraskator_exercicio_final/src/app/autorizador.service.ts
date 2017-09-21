@@ -17,11 +17,14 @@ export class AutorizadorService {
 
   login(usuario:string,senha:string){
 
-//    if ( usuario == 'a@a' && senha == 'a' ) {
+    console.log("usuario: " + usuario);
+    console.log("senha: " + senha);
+
+    if ( usuario == "admin@xurraskator.org" && senha == "sucesso" ) {
       this.logado = true;
-//    }else {
-//      this.logado = false;
-//    }
+    }else {
+      this.logado = false;
+    }
     
     this.token = "eternotoken";
 

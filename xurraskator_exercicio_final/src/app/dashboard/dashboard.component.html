@@ -6,10 +6,10 @@
           </ng-template>
        </p-dataList>
     </p-accordionTab> -->
-    <p-accordionTab header="Produtos" [selected]="true">
+    <p-accordionTab header="Produtos ({{itensProduto}})" [selected]="true">
        <p-dataList [value]="listaProduto" >
           <ng-template let-produto pTemplate="item">
-          {{produto.nome}}
+            {{produto.nome}} ( {{produto.quantidade}} {{produto.categoria.nome}} no total e  {{produto.quantidade / itensCliente  | fixed:2}} {{produto.categoria.nome}} por pessoa) 
           </ng-template>
        </p-dataList>
     </p-accordionTab>
@@ -20,7 +20,7 @@
           </ng-template>
        </p-dataList>
     </p-accordionTab> -->
-    <p-accordionTab header="Convidados" [selected]="true">
+    <p-accordionTab header="Convidados ({{itensCliente}})" [selected]="true">
             <p-dataList [value]="listaCliente" >
                <ng-template let-cliente pTemplate="item">
                {{cliente.nome}}

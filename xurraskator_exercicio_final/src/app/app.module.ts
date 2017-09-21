@@ -20,12 +20,14 @@ import { ClienteService} from './cliente.service';
 import { LoginComponent } from './login/login.component';
 import { GuardGuard } from './guard.guard';
 import { PanelModule} from 'primeng/primeng';
+import { FixedPipe } from './fixed.pipe'
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    LoginComponent
+    LoginComponent, 
+    FixedPipe
   ],
   imports: [
     BrowserModule,
