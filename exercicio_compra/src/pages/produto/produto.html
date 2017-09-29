@@ -1,0 +1,41 @@
+<!--
+  Generated template for the ProdutoPage page.
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  
+    <ion-navbar>
+      <ion-title>{{lp.alterando?"Alterando":"Incluindo"}} Produto</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <ion-list>
+      <form #f="ngForm" (ngSubmit)="salvar(f)" novalidate>
+  
+  
+        <ion-item>
+          <ion-label floating>Nome</ion-label>
+          <ion-input name="nome" type="text" [ngModel]="lp.selecionado.nome"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label floating>Quantidade</ion-label>
+          <ion-input name="quantidade" type="number" [ngModel]="lp.selecionado.quantidade"></ion-input>
+        </ion-item>
+  
+  
+  
+        <ion-row>
+          <button type="submit" ion-button block>Salvar</button>
+        </ion-row>
+      </form>
+      <ion-row>
+        <button (click)="delete()" ion-button block [disabled]="!lp.alterando">Excluir</button>
+      </ion-row>
+    </ion-list>
+  
+  </ion-content>
